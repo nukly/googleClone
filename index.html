@@ -5,15 +5,27 @@
         <title>Search</title>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Google search</a> </li>
-            <li> <a href="imageSearch.html">Image search</a> </li>
-            <li> <a href="advancedSearch.html">Advanced search</a> </li>
-        </ul>
-        <h1>Google Search</h1>
-        <form action="https://www.google.si/imghp?hl=sl">
-            <input type="text" name="q">
-            <input type="submit" value="Image Search">
-        </form>
+        <div class="header">
+            <ul>
+                <li> <a href="imageSearch.html">Image search</a> </li>
+                <li> <a href="advancedSearch.html">Advanced search</a> </li>
+            </ul>
+        </div>
+        
+        <div class="googleSearch">
+            <div class="logo">
+                <img alt="Google" height="92" src="google-logo.png" width="272" data-atf="1" data-frt="0">
+            </div>
+
+            <form action="https://www.google.si/search?">
+                <div class="searchbar">
+                    <input class="searchInput" type="text" name="q">
+                </div>
+                <div class="searchBtn">
+                    <input type="submit" value="Google Search">
+                </div> 
+            </form>
+    </div>
+        
     </body>
 </html>
