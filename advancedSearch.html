@@ -8,19 +8,67 @@
     <title>Advanced Search</title>
 </head>
 <body>
-    <div class="header">
+    <div class="logoNavbar">
+        <div class="logoAdvanced">
+            <img alt="Google" height="24" src="google-logo.png" width="72" data-atf="1" data-frt="0">
+        </div>
+    </div>
+    <div class="navbar-div">
+        <div class="navbar">
+            <div class="navbar-items">
+                <a href="index.html">Google search</a>
+                <a href="imageSearch.html">Image Search</a>
+            </div>
+        </div>
+    </div>
+    <div class="advancedSearch">
+        
+        <h1>Find words with...</h1>
+        <hr>
+        <div class="advancedForm">
+            <form class="formCols" action="https://www.google.com/search?&as_q&as_epq&as_oq&as_eq&as_sitesearch&tbs&as_qdr&as_nlo&as_nhi&lr&cr">
+                <div class="colOne">
+                <div class="labelsColumn">
+                    
+                    <label class="labels" for="as_q">All theese words: </label> <br>
+                    <label class="labels" for="as_epq">Exactly this word:</label><br>
+                    <label class="labels" for="as_oq">Any of this words:</label><br>
+                    <label class="labels" for="as_eq">None of theese words: </label><br>
+                </div>
+                
+                    
+                    </div>
+                    <div class="colTwo">
+                        <div class="inputsColumn">
+                            <input class="colInputs" type="text" name="as_q"><br>
+                            <input class="colInputs" type="text" name="as_epq"><br>
+                            <input class="colInputs" type="text" name="as_oq"><br>
+                            <input class="colInputs" type="text" name="as_eq"><br>
+                        </div>
+                    </div>
+                <div class="colThree">
+                    <div class="submitBtn">
+                        <button id="subBtn" type="submit" value="Advanced Search">Advanced Search</button>
+                    </div>
+                </div>
+
+                </form>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    <div id="footer">
         <ul>
-            <li><a href="index.html">Google search</a> </li>
-            <li><a href="imageSearch.html">Image search</a> </li>
+            <li class="onLeft"><a href="https://about.google/?utm_source=google-SI&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+            <li class="onLeft"><a href="https://ads.google.com/intl/sl_si/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+            <li class="onLeft"><a href="https://www.google.si/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+            <li class="onLeft"><a href="https://www.google.com/search/howsearchworks/?fg=1">How google search works</a></li>
+            <li class="onRight"><a href="https://policies.google.com/privacy?hl=sl&fg=1">Privacy</a></li>
+            <li class="onRight"><a href="https://policies.google.com/terms?hl=sl&fg=1">Terms</a></li>
+            <li class="onRight"><a href="">Settings</a></li>
         </ul>
     </div>
-    <div class="googleSearch">
-        
-        <form action="https://www.google.com/advanced_search">
-            <input type="text" name="q">
-            <input type="submit" value="Advanced Search">
-        </form>
-    </div>
-    
 </body>
 </html>

@@ -5,32 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Image Search</title>
+    <title>Google</title>
 </head>
 <body>
-    <div class="header">
-        <ul>
-            <li><a href="index.html">Google search</a> </li>
-            <li> <a href="advancedSearch.html">Advanced search</a> </li>
-        </ul>
+<div class="container">
+    <div class="navbar-div">
+        <div class="navbar">
+            <div class="navbar-items">
+                <a href="index.html">Google search</a>
+                <a href="advancedSearch.html">Advanced Search</a>
+            </div>
+        </div>
     </div>
-
     <div class="googleSearch">
         <div class="logo">
-            <img alt="Google" height="92" src="google-logo-slike.png" width="272" data-atf="1" data-frt="0">
+            <img alt="Google" height="92" src="google-logo.png" width="272" data-atf="1" data-frt="0">
+            <div class="imgText">images</div>
         </div>
-        <form action="https://images.google.si/search?" method="get">
-            <div class="searchBar">
-                <input class="searchInput" type="text" name="q">
+        <form action="https://www.google.com/images">
+                
+            <div id="searchInputForm">
+                <div class="icon">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                </div><input id="searchInput"type="text" name="q">
             </div>
-            <div class="searchBtn">
-                <input type="submit" value="Image Search" >
-            </div>
+            <input class="inputBtn" type="submit" value="Google Search">
+            <input class="inputBtn" type="submit" value="Lucky click!">
         </form>
     </div>
-    
-    
-    
-    
+    <div id="footer">
+        <ul>
+            <li class="onLeft"><a href="https://about.google/?utm_source=google-SI&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+            <li class="onLeft"><a href="https://ads.google.com/intl/sl_si/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+            <li class="onLeft"><a href="https://www.google.si/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+            <li class="onLeft"><a href="https://www.google.com/search/howsearchworks/?fg=1">How google search works</a></li>
+            <li class="onRight"><a href="https://policies.google.com/privacy?hl=sl&fg=1">Privacy</a></li>
+            <li class="onRight"><a href="https://policies.google.com/terms?hl=sl&fg=1">Terms</a></li>
+            <li class="onRight"><a href="">Settings</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
